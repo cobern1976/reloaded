@@ -1,0 +1,73 @@
+
+Hi,
+You have been graded 12 on Piscine Reloaded:
+ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: KO (вместо ether) -Ether| ex05: OK | ex06: KO - убрать перевод на новую строку| ex07: KO - убрать перевод на новую строку | ex08: KO - убрать перевод на новую строку | ex09: OK | ex10: OK | ex11: OK | ex12: KO - для 0 факториал 0 а у меня 1| ex13: Does not compile исправить в тексте обращение к функции iterative на recursive| ex14: OK | ex15: OK | ex16: OK | ex17: OK | ex18: OK | ex19: OK | ex20: KO смотри разницу в тестах | ex21: KO смотри разницу в тестах | ex22: OK | ex23: OK | ex24: KO - протестить makefile с файлами | ex25: Does not compile  смотри логи | ex26: KO смотри логи| ex27: OK
+
+test for 20
+ hello 42$
+-cjR4LmQketKbhkk7kBZZILaHPdudqhqHS7keXuUxkv42^?$
+-qwOPVcEuqFX6nizy^L$
++cjR4LmQketKbhkk7kBZZILaHPdudqhqHS7keXuUxkv42$
++qwOPVcEuqFX6nizy$
+ 3ZFObmBKyRdKlUuw4ruX$
+ AuasNVUsoxVBKObTvcEYTaTWW$
+ Qx3Xc2fRjUP$
+-q3fqbZn1zwrwgVtash6aE1hcyvdoyDPL7y3nbql2hObbj^?^C$
++q3fqbZn1zwrwgVtash6aE1hcyvdoyDPL7y3nbql2hObbj$
+ KWbjHD97J2AjmWQiDD63idmmtDmGd$
+-ajZv3R2pTl784C2Am9E6wlPZVGn5En0LzNzuZnNcyvdoyDPL$
++ajZv3R2pTl784C2Am9E6wlPZVGn5En0LzNzuZnN$
+
+= Test 1  ex21 эту проверку не прошло===================================================
+$> ./tqeg6go34vi8q16dulsnfl06
+$> diff -U 3 user_output_test1 test1.output | cat -e
+--- user_output_test1 2019-09-05 20:22:37.000000000 +0300$
++++ test1.output 2019-09-05 20:22:37.000000000 +0300$
+@@ -1,5 +1,5 @@$
+ 0x0$
+-$
++0x0$
+ 0x0$
+ -30, -29, -28, -27, -26, -25, -24, -23, -22, -21, -20, -19, -18, -17, -16, -15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160$
+ -61, -60, -59, -58, -57, -56, -55, -54, -53, -52, -51, -50, -49, -48, -47, -46, -45, -44, -43, -42, -41, -40, -39, -38, -37, -36, -35, -34, -33, -32, -31, -30, -29, -28, -27, -26, -25, -24, -23, -22, -21, -20, -19, -18, -17, -16, -15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 1
+ 62$
+
+Diff KO :(
+Grade: 0
+
+= ex24 =========================================================================
+total 8
+-rw-r--r-- 1 deepthought deepthought 1129 Sep 5 20:22 Makefile
+drwxr-xr-x 3 deepthought deepthought 102 Nov 19 2018 includes
+drwxr-xr-x 7 deepthought deepthought 238 Nov 19 2018 srcs
+Makefile:21: *** missing separator. Stop.
+
+Grade: 0
+
+
+= ex25 =========================================================================
+$> /usr/bin/norminette ft_foreach.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_foreach.c -o user_exe 
+Undefined symbols for architecture x86_64:
+  "_ft_foreach", referenced from:
+      _main in main-867bc5.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+Could not compile 'user_exe'
+Grade: 0
+
+Diff OK :D ex 26 на этом тесте не прошло
+= Test 5 ===================================================
+$> ./8cq773anj14y9xl9mbaw1zvr "m5qpIi" "SXvZ4qO" "k9E" "lqFt3YSe" "7i" "SoDUYeGm"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+--- user_output_test5 2019-09-05 20:22:43.000000000 +0300$
++++ test5.output 2019-09-05 20:22:43.000000000 +0300$
+@@ -1,2 +1,2 @@$
+-0$
++1$
+ 0$
+
+Diff KO :(
+Grade: 0
